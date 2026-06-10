@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Sidebar() {
   return (
     <aside className="w-64 bg-slate-900 text-white p-6">
@@ -6,21 +8,21 @@ export function Sidebar() {
       </h2>
 
       <nav className="flex flex-col gap-5">
-        <a href="#" className="hover:text-purple-400">
+        <Link href="/" className="hover:text-purple-400">
           📊 Dashboard
-        </a>
+        </Link>
 
-        <a href="#" className="hover:text-purple-400">
+        <Link href="/eventos" className="hover:text-purple-400">
           🎉 Eventos
-        </a>
+        </Link>
 
-        <a href="#" className="hover:text-purple-400">
+        <Link href="/convidados" className="hover:text-purple-400">
           👥 Convidados
-        </a>
+        </Link>
 
-        <a href="#" className="hover:text-purple-400">
+        <Link href="/configuracoes" className="hover:text-purple-400">
           ⚙️ Configurações
-        </a>
+        </Link>
       </nav>
     </aside>
   );
