@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function EventosPage() {
   return (
     <div className="p-6">
@@ -6,9 +7,12 @@ export default function EventosPage() {
           Eventos
         </h1>
 
-        <button className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">
-          Novo Evento
-        </button>
+       <Link
+        href="/eventos/novo"
+        className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700"
+        >
+        Novo Evento
+        </Link>
       </div>
 
       <div className="bg-white rounded-xl shadow">
